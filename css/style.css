@@ -6,13 +6,15 @@
 
 body{
   min-width: auto;
-  
-
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+
+
 
 header{
   width: 100%;
-  height: 465px;
+  height:65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +36,7 @@ header div.logo{
   background-color: rgb(49 97 224);
 }
 
+
 header .menu ul{
   display: flex;
   list-style: none;
@@ -48,27 +51,26 @@ header .menu ul li a{
   color: rgb(254 254 255);
 }
 
-.button{
+.button a{
+  text-decoration: none;
   background-color: aliceblue;
   padding: 5px;
   border-radius: 25px;
+  
 }
 
-.intro{
+.firstscreen{
   width: 100%;
-  height: 400px;
-  background-color: rgb(0 0 139);
+  height: 500px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.intro aside{
-  width: 50%;
-  height: 80%;
-  display: flex;
-  background-color: rgb(237 130 238);
-}
+
+
 
 .sezione{
   width: 100%;
@@ -80,10 +82,70 @@ header .menu ul li a{
 }
 
 
+.content{
+width: 50%;
+height: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(255,0,0,0.0);
+}
+
+
+
+.content h1{
+  color: rgb(255 255 255);
+  font-size: 55px;
+  padding-top: 30px;
+  text-align: center;
+  
+}
+
+.content p{
+  color: rgb(255 255 255);
+  font-size: 15px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.entrit{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.entrit{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+div .link a{
+  color: black;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 25px;
+}
+
+div .aprilink a{
+  text-decoration: none;
+  color: rgb(255 255 255);
+  padding: 15px;
+  margin: 15px;
+  border-radius: 25px;
+  background-color: rgb(34 39 41);
+}
+
+
+
 .sezione .first{
   height: 350px;
   width: 40%;
-  background-color: rgb(29 144 255);
+  background-image: url(../img/item1.svg);
 }
 
 .sezione .firstn{
@@ -92,26 +154,47 @@ header .menu ul li a{
   background-color: rgb(255 191 203);
 }
 
+.firstn h1{
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.firstn p{
+  padding: 20px 20px;
+}
+
 
 .sezione .second{
   height: 350px;
   width: 25%;
+  padding-right: 20px;
   background-color: rgb(255 191 203);
-  
 }
+
 
 
 .sezione .secondn{
   height: 350px;
   width: 40%;
-  background-color: rgb(29 144 255);
+background-image: url(../img/item2.svg);}
+
+
+.second h1{
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.second p{
+  font-size: 20px;
 }
 
 
 .sezione .trt{
   height: 350px;
   width: 40%;
-  background-color: rgb(29 144 255);
+  background-image: url(../img/item3.svg);
 }
 
 
@@ -121,12 +204,22 @@ header .menu ul li a{
   background-color: rgb(255 191 203);
 }
 
+.trtn h1{
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+.trtn p{
+  padding: 20px 20px;
+}
 
 .container{
   width: 100%;
-  height: 800px;
-  background-color: rgb(211 211 211);
+  height: 1200px;
+  background-color: rgb(246 246 246);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -135,8 +228,15 @@ header .menu ul li a{
   width: 65%;
   height: 90%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: rgb(35 139 33);
 }
+
+
+
+
+
 
 .prechiusura{
   width: 100%;
@@ -147,6 +247,7 @@ header .menu ul li a{
   justify-content: center;
   align-items: center;
 }
+
 
 .prechiusura .col1{
   width: 20%;
@@ -183,3 +284,5 @@ header .menu ul li a{
   justify-content: space-between;
   align-items: center;
 }
+
+
